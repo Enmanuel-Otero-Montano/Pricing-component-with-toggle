@@ -1,0 +1,60 @@
+.frecuency-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.title {
+    text-align: center;
+    color: hsl(232, 13%, 33%);
+}
+
+.monthly,
+.annually {
+    color: hsla(233, 13%, 49%, .6);
+}
+
+.toggle {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 25px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.radio {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.radio:checked {
+    width: 20px;
+    height: 20px;
+}
+
+.radio-annually {
+    visibility: hidden;
+}
+
+.radio-monthly {
+    visibility: hidden;
+}
+
+@media(hover: hover) {
+    .radio:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+   .cards {
+       display: flex;
+   } 
+}

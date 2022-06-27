@@ -1,1 +1,132 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: hsl(234, 14%, 92%);
+    background-image: url(./assets/image/bg-top.svg);
+    background-position: 330% top;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 290px;
+    padding: 25px 18px;
+    border-radius: 5px;
+    color: hsl(232, 13%, 33%);
+    background-color: hsl(240, 78%, 98%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.price {
+    font-size: 3.5rem;
+    margin-left: 8px;
+}
+
+ul {
+    width: 95%;
+    padding-left: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+li:nth-child(1) {
+    border-top-style: solid;
+    border-top-width: .5px;
+}
+
+li:nth-child(2) {
+    border-top: solid .5px;
+    border-bottom: solid .5px;
+}
+
+li:nth-child(3) {
+    border-bottom-style: solid;
+    border-bottom-width: .5px;
+}
+
+.buttons {
+    width: 95%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: .8rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: .9px;
+}
+
+.button-basic,
+.button-master {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: hsl(0, 0%, 100%);
+}
+
+.button-pro {
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+}
+
+@media (hover: hover) {
+    .buttons:hover {
+        cursor: pointer;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        background: url(./assets/image/bg-top.svg), url(./assets/image/bg-bottom.svg);
+        background-position: 125% top, 0 bottom;
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-color: hsl(234, 14%, 92%);
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    body {
+        background: url(./assets/image/bg-top.svg), url(./assets/image/bg-bottom.svg);
+        background-position: 100% top, 0 120%;
+        background-repeat: no-repeat;
+        background-color: hsl(234, 14%, 92%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        padding-top: 130px;
+    }
+}

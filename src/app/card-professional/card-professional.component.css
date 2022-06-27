@@ -1,0 +1,26 @@
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: hsl(0, 0%, 100%);
+}
+
+.button-pro {
+    border: solid 1px hsl(0, 0%, 100%);
+}
+
+@media (hover: hover) {
+    .button-pro:hover {
+       background-color: transparent;
+       color: hsl(0, 0%, 100%); 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .card {
+        margin: initial;
+        padding-top: 39px;
+        padding-bottom: 39px;
+    }
+}

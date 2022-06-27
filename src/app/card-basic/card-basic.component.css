@@ -1,0 +1,17 @@
+.button-basic {
+    border: solid 1px;
+}
+
+@media (hover: hover) {
+    .button-basic:hover {
+       background: transparent;
+       color: hsl(237, 63%, 64%); 
+       border: solid .5px hsl(237, 63%, 64%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        margin-top: 14.67px;
+    } 
+ }
